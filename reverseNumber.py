@@ -12,3 +12,4 @@ class Solution:
             return -1 * result
         else:
             return result
+        
