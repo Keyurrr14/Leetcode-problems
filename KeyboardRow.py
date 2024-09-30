@@ -10,3 +10,17 @@ class Solution:
                 res.append(word)
         
         return res
+
+
+class Solution:
+    def findWords(self, words: List[str]) -> List[str]:
+        l1 = "qwertyuiop"
+        l2 = "asdfghjkl"
+        l3 = "zxcvbnm"
+        res = []
+        for word in words:
+            w = set(word.lower())
+            if w.issubset(l1) or w.issubset(l2) or w.issubset(l3): 
+                res.append(word)
+        
+        return res
