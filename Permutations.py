@@ -15,4 +15,11 @@ class Solution:
             nums.append(n)
         return result
 
+class Solution:
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        from itertools import permutations
+        d = []
+        for x in permutations(nums):
+            d.append(list(x))
+        return d
         
